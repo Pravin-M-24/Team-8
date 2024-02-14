@@ -12,14 +12,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="mainHeader">
-        <div class="icon"><img class="resumeIcon" src="./images/resume_icon.png" alt=""><h1></h1></div>
-        <button onclick="generatePDF()" class="downloadBtn" id="downloadPdf"><img class="downloadIcon" src="./images/download_icon.png" alt="">Download PDF</button>
+    <div class="main-header">
+        <div class="resume-icon">
+            <img class="resume-img" src="./images/resume_icon.png" alt="">
+        </div>
+        <button onclick="createPdf()" class="download-btn" id="downloadPdf"><img class="downloadIcon" src="./images/download_icon.png" alt="">Download</button>
     </div>
 
-    <div class="main">
-        <div class="leftContainer">
-            <div id="types">
+    <div class="main-box">
+        <div class="left-container">
+            <div id="types-section">
                 <h1>Template types</h1>
                 <select name="TemplateTypes" id="select">
                     <option value="Two-columns">Two-columns</option>
@@ -27,16 +29,16 @@
                 </select>
             </div>
 
-            <div id="headerColor">
+            <div id="header-color">
                 <h1>Header Color</h1>
                 <input type="color" value="#7dfsad" name="" id="headerColorInput">
             </div>
 
-            <div id="headerTextColor">
+            <div id="header-text-color">
                 <h1>Header-Text Color</h1>
                 <input type="color" value="#cccccc" id="headerTextColorInput">
             </div>
-            <div id="personalDetails">
+            <div id="personal-details">
                 <h1>Personal Details</h1>
                 <input type="text" name="" id="nameInput" placeholder="Name" >
                 <input type="email" name="" id="emailInput" placeholder="E-mail ID" >
@@ -44,14 +46,14 @@
                 <input type="text" name="" id="addressInput" placeholder="City, Country">
             </div>
 
-            <div id="professionalDetails">
+            <div id="professional-details">
                 <h1>Professional Details</h1>
                 <input type="text" id="jobRoleInput" placeholder="Wanted job title">
                 <textarea name="" id="descriptionInput" placeholder="Professional Summary"></textarea>
                 <input type="text" id="skillsInput" placeholder="Skills">
             </div>
 
-            <div id="employementbtn">
+            <div id="emp-btn">
                 <button id="addEmployement">Add Employement</button>
                 <div id="Employement-details">
                 </div>

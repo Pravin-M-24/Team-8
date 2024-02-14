@@ -1,6 +1,3 @@
-
-// to choose template
-
 const selectTemplate = document.getElementById("select");
 const twoColumnsTemp = document.getElementById("twoColumnTemplate");
 const minimalistic = document.getElementById("minimalisticTemplate");
@@ -357,7 +354,6 @@ educationBtn.addEventListener("click" , () => {
     const instituteIp = div3.querySelector("#instituteInput");
     const educationdescriptionIp = div3.querySelector("#educationDescription");
 
-// two column 
     const educationStart = educationDiv1.querySelector("#educationStartDate");
     const educationEnd = educationDiv1.querySelector("#educationEndDate");
     const educationTitle = educationDiv1.querySelector("#educationTitleInfo");
@@ -366,7 +362,6 @@ educationBtn.addEventListener("click" , () => {
     educationStart.style.fontWeight = "bold";
     educationEnd.style.fontWeight = "bold";
     educationTitle.style.fontWeight = "bold";
-// minimalistic
     const educationStart2 = educationDiv2.querySelector("#MinieducationStartDate");
     const educationEnd2 = educationDiv2.querySelector("#MinieducationEndDate");
     const educationTitle2 = educationDiv2.querySelector("#MinieducationTitleInfo");
@@ -407,7 +402,7 @@ educationBtn.addEventListener("click" , () => {
 
 // const downloadBtn = document.getElementById("downloadPdf");
 
-function generatePDF(){
+function createPdf(){
    if(selectTemplate.value === "Two-columns"){
     const element = document.getElementById("twoColumnTemplate");
     html2pdf(element, {
